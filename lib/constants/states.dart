@@ -35,9 +35,6 @@ List<States> state = [
       name : "Surat"
   ),
   new States(
-      name : "Uttar Pradesh"
-  ),
-  new States(
       name : "Uttarakhand"
   ),
 ];

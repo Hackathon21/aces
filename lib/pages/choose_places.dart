@@ -27,15 +27,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==1) {
@@ -53,15 +48,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==2) {
@@ -79,15 +69,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==3) {
@@ -105,15 +90,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==4) {
@@ -131,15 +111,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==5) {
@@ -157,15 +132,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==6) {
@@ -183,15 +153,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==7) {
@@ -209,15 +174,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==8) {
@@ -235,15 +195,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     if(index==9) {
@@ -261,41 +216,10 @@ class _PlacesHospitalState extends State<PlacesHospital> {
         "covidBedsVacant": instance.covidBedsVacant,
         "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
         "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
         "hasIcuBeds": instance.hasIcuBeds,
         "hasVantilators": instance.hasVantilators,
         "isNewHospital": instance.isNewHospital,
         "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
-      });
-    }
-    if(index==10) {
-      HospiData instance = new HospiData();
-      await instance.getHospitalData10(url2);
-      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
-        "hospName": instance.hospName,
-        "address": instance.address,
-        "district": instance.district,
-        "contact": instance.contact,
-        "type": instance.type,
-        "total": instance.total,
-        "vacant": instance.vacant,
-        "covidBedsRegula": instance.covidBedsRegular,
-        "covidBedsVacant": instance.covidBedsVacant,
-        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
-        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
-        "hduBedsRegular": instance.hduBedsRegular,
-        "hduBedsVacant": instance.hduBedsVacant,
-        "hasIcuBeds": instance.hasIcuBeds,
-        "hasVantilators": instance.hasVantilators,
-        "isNewHospital": instance.isNewHospital,
-        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
-        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
-        "lat": instance.lat,
-        "long": instance.lon,
       });
     }
     }

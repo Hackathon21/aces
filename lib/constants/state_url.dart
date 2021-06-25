@@ -35,9 +35,6 @@ List<StateUrl> url3 = [
       url: "https://api.covidbedsindia.in/v1/storages/6094e879423e213eb82fd384/Surat"
   ),
   StateUrl(
-      url: "https://api.covidbedsindia.in/v1/storages/609fc7dde75f9ccdd696eb35/Uttar%20Pradesh"
-  ),
-  StateUrl(
       url: "https://api.covidbedsindia.in/v1/storages/608d542333382c01aecf8c95/Uttarakhand"
   ),
 ];

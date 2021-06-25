@@ -19,6 +19,7 @@ class _DisplayHospitalState extends State<DisplayHospital> {
       child: Scaffold(
         backgroundColor: Colors.grey[300],
         body: ListView.builder(itemCount: data["hospName"].length,itemBuilder: (context,index){
+          print(index);
           return Padding(padding: EdgeInsets.all(3.0),
             child: Card(
               elevation: 6,
@@ -55,12 +56,6 @@ class _DisplayHospitalState extends State<DisplayHospital> {
                       height: 3,
                       thickness: 3,
                     ),
-                    Text(data["hduBedsRegular"][index]),
-                    Text(data["hduBedsVacant"][index]),
-                    Divider(
-                      height: 3,
-                      thickness: 3,
-                    ),
                     Text(data["hasIcuBeds"][index]),
                     Text(data["hasVantilators"][index]),
                     Text(data["isNewHospital"][index]),
@@ -69,15 +64,14 @@ class _DisplayHospitalState extends State<DisplayHospital> {
                       thickness: 3,
                     ),
                     Text(data["ccuBedsWithVantilatorTotal"][index]),
-                    Text(data["ccuBedsWithVantilatorVacant"][index]),
                     Divider(
                       height: 3,
                       thickness: 3,
                     ),
                     Center(
                       child: FlatButton.icon(onPressed: () async {
-                        print(data["loc"][index]);
-                        await Navigator.pushNamed(context, "/mapDisplay",arguments: {"loc": data["loc"],"name": data["hospName"][index],"address": data["address"][index],});
+                        //print(data["loc"][index]);
+                        await Navigator.pushNamed(context, "/mapDisplay");
                       }, icon: Icon(
                         Icons.edit_location,
                         color: Colors.blue[700],
