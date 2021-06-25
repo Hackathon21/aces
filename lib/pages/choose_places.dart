@@ -11,30 +11,294 @@ class PlacesHospital extends StatefulWidget {
 }
 
 class _PlacesHospitalState extends State<PlacesHospital> {
-  void placeHospitalData(String url2) async{
-    HospiData instance  = new HospiData();
-    await instance.getHospitalData(url2);
-    Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
-      "hospName":instance.hospName,
-      "address":instance.address,
-      "district":instance.district,
-      "contact":instance.contact,
-      "type":instance.type,
-      "total":instance.total,
-      "vacant":instance.vacant,
-      "covidBedsRegula":instance.covidBedsRegular,
-      "covidBedsVacant":instance.covidBedsVacant,
-      "covidBedsOxygenTotal":instance.covidBedsOxygenTotal,
-      "covidBedsOxygenVacant":instance.covidBedsOxygenVacant,
-      "hduBedsRegular":instance.hduBedsRegular,
-      "hduBedsVacant":instance.hduBedsVacant,
-      "hasIcuBeds":instance.hasIcuBeds,
-      "hasVantilators":instance.hasVantilators,
-      "isNewHospital":instance.isNewHospital,
-      "ccuBedsWithVantilatorTotal":instance.ccuBedsWithVantilatorTotal,
-      "ccuBedsWithVantilatorVacant":instance.ccuBedsWithVantilatorVacant,
-    });
-  }
+  void placeHospitalData(String url2, int index) async{
+    if(index==0) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==1) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData1(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==2) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData2(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==3) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData3(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==4) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData4(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==5) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData5(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==6) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData6(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==7) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData7(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==8) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData8(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==9) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData9(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    if(index==10) {
+      HospiData instance = new HospiData();
+      await instance.getHospitalData10(url2);
+      Navigator.pushNamed(context, "/hospitalDisplay", arguments: {
+        "hospName": instance.hospName,
+        "address": instance.address,
+        "district": instance.district,
+        "contact": instance.contact,
+        "type": instance.type,
+        "total": instance.total,
+        "vacant": instance.vacant,
+        "covidBedsRegula": instance.covidBedsRegular,
+        "covidBedsVacant": instance.covidBedsVacant,
+        "covidBedsOxygenTotal": instance.covidBedsOxygenTotal,
+        "covidBedsOxygenVacant": instance.covidBedsOxygenVacant,
+        "hduBedsRegular": instance.hduBedsRegular,
+        "hduBedsVacant": instance.hduBedsVacant,
+        "hasIcuBeds": instance.hasIcuBeds,
+        "hasVantilators": instance.hasVantilators,
+        "isNewHospital": instance.isNewHospital,
+        "ccuBedsWithVantilatorTotal": instance.ccuBedsWithVantilatorTotal,
+        "ccuBedsWithVantilatorVacant": instance.ccuBedsWithVantilatorVacant,
+        "lat": instance.lat,
+        "long": instance.lon,
+      });
+    }
+    }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +316,7 @@ class _PlacesHospitalState extends State<PlacesHospital> {
             child: ListTile(
               onTap: () {
                 print(url3[index].url);
-                placeHospitalData(url3[index].url.toString());
+                placeHospitalData(url3[index].url.toString(), index);
               },
               title: Text(state[index].name),
             ),

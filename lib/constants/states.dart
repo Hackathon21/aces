@@ -8,10 +8,10 @@ class States {
 
 List<States> state = [
   new States(
-      name : "Andhra Pradesh"
+      name : "West Bengal"
   ),
   new States(
-      name : "Bengaluru"
+      name : "Andhra Pradesh"
   ),
   new States(
       name : "Bihar"
@@ -21,15 +21,6 @@ List<States> state = [
   ),
   new States(
       name : "Gandhinagar"
-  ),
-  new States(
-      name : "Goa"
-  ),
-  new States(
-      name : "Haryana"
-  ),
-  new States(
-      name : "Nagpur"
   ),
   new States(
       name : "Nashik"
@@ -44,21 +35,9 @@ List<States> state = [
       name : "Surat"
   ),
   new States(
-      name : "Tamil Nadu"
-  ),
-  new States(
-      name : "Telangan"
-  ),
-  new States(
-      name : "Thane"
-  ),
-  new States(
-      name : "Uttarakhand"
-  ),
-  new States(
       name : "Uttar Pradesh"
   ),
   new States(
-      name : "West Bengal"
+      name : "Uttarakhand"
   ),
 ];
