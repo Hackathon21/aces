@@ -1,3 +1,4 @@
+import 'package:covid_tracker/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -74,121 +75,145 @@ class _HomeState extends State<Home> {
                     )
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
-                Text("TOTAL CASES",
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.red[800],)
-                ),
-                Text(data["cases"],
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.black87,)
-                ),
-                Divider(
-                  height: 3,
-                  thickness: 3,
-                  color: Colors.blue[900],
-                ),
-                Text("FRESH CASES",
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.red[800],)
-                ),
-                Text(data["todayCases"],
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.black87,)
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                      child:ListTile(
+                        title: Text(data["cases"],
+                            style: TextStyle(
+                              fontSize: 28.0,
+                              letterSpacing: 2.0,
+                              color: darkTheme.primaryColor,)
+                        ),
+                        subtitle: Text("TOTAL CASES",
+                            style: TextStyle(
+                              color: darkTheme.primaryColorLight,)
+                        ),
+                      ),
                 ),
                 Divider(
                   height: 3,
                   thickness: 3,
                   color: Colors.blue[900],
                 ),
-                Text("TOTAL DEATHS",
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.red[800],)
-                ),
-                Text(data["deaths"],
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.black87,)
-                ),
-                Divider(
-                  height: 3,
-                  thickness: 3,
-                  color: Colors.blue[900],
-                ),
-                Text("DEATHS TODAY",
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.red[800],)
-                ),
-                Text(data["todayDeaths"],
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.black87,)
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                      child: ListTile(
+                        title:Text(data["todayCases"],
+                            style: TextStyle(
+                              fontSize: 28.0,
+                              letterSpacing: 2.0,
+                              color: darkTheme.primaryColor,)
+                        ),
+                        subtitle: Text("FRESH CASES",
+                            style: TextStyle(
+                              color: darkTheme.primaryColorLight,)
+                        ),
+                      ),
                 ),
                 Divider(
                   height: 3,
                   thickness: 3,
                   color: Colors.blue[900],
                 ),
-                Text("TOTAL RECOVERED",
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.red[800],)
-                ),
-                Text(data["recovered"],
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.black87,)
-                ),
-                Divider(
-                  height: 3,
-                  thickness: 3,
-                  color: Colors.blue[900],
-                ),
-                Text("RECOVERED TODAY",
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.red[800],)
-                ),
-                Text(data["todayRecovered"],
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.black87,)
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                      child:ListTile(
+                        title: Text(data["deaths"],
+                            style: TextStyle(
+                              fontSize: 28.0,
+                              letterSpacing: 2.0,
+                              color: darkTheme.primaryColor,)
+                        ),
+                        subtitle: Text("TOTAL DEATHS",
+                            style: TextStyle(
+                              color: darkTheme.primaryColorLight,)
+                        ),
+                      ),
                 ),
                 Divider(
                   height: 3,
                   thickness: 3,
                   color: Colors.blue[900],
                 ),
-                Text("ACTIVE CASES",
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.red[800],)
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                      child:ListTile(
+                        title: Text(data["todayDeaths"],
+                            style: TextStyle(
+                              fontSize: 28.0,
+                              letterSpacing: 2.0,
+                              color: darkTheme.primaryColor,)
+                        ),
+                        subtitle:Text("DEATHS TODAY",
+                            style: TextStyle(
+                              color: darkTheme.primaryColorLight,)
+                        ),
+                      ),
                 ),
-                Text(data["active"],
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      letterSpacing: 2.0,
-                      color: Colors.black87,)
+                Divider(
+                  height: 3,
+                  thickness: 3,
+                  color: Colors.blue[900],
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                     child: ListTile(
+                        title: Text(data["recovered"],
+                            style: TextStyle(
+                              fontSize: 28.0,
+                              letterSpacing: 2.0,
+                              color: darkTheme.primaryColor,)
+                        ),
+                        subtitle:Text("TOTAL RECOVERED",
+                            style: TextStyle(
+                              color: darkTheme.primaryColorLight,)
+                        ),
+                      ),
+                ),
+                Divider(
+                  height: 3,
+                  thickness: 3,
+                  color: Colors.blue[900],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                      child:ListTile(
+                        title: Text(data["todayRecovered"],
+                            style: TextStyle(
+                              fontSize: 28.0,
+                              letterSpacing: 2.0,
+                              color: darkTheme.primaryColor,)
+                        ),
+                        subtitle:Text("RECOVERED TODAY",
+                            style: TextStyle(
+                              color: darkTheme.primaryColorLight,)
+                        ),
+                      ),
+                ),
+                Divider(
+                  height: 3,
+                  thickness: 3,
+                  color: Colors.blue[900],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                     child: ListTile(
+                        title: Text(data["active"],
+                            style: TextStyle(
+                              fontSize: 28.0,
+                              letterSpacing: 2.0,
+                              color: darkTheme.primaryColor,)
+                        ),
+                        subtitle: Text("ACTIVE CASES",
+                            style: TextStyle(
+                              color: darkTheme.primaryColorLight,)
+                        ),
+                      ),
                 )],
             ),
           ),

@@ -13,7 +13,7 @@ class _LoadingState extends State<Loading> {
   void setupCovidData() async{
     Country instance = new Country();
     await instance.getData(countries[0].name);
-    Navigator.pushReplacementNamed(context, "/dashboard",arguments: {
+    Navigator.pushReplacementNamed(context, "/onboard",arguments: {
       "cases": instance.cases,
       "todayCases": instance.todayCase,
       "deaths": instance.deaths,
@@ -40,7 +40,7 @@ class _LoadingState extends State<Loading> {
           height: 250,
           child: Column(
             children: [
-              SpinKitRotatingCircle(
+              SpinKitRipple(
                 color: Colors.white,
                 size:50.0,
                 duration: Duration(seconds: 3),
@@ -48,9 +48,9 @@ class _LoadingState extends State<Loading> {
               Expanded(child:
               Padding(
                 padding: const EdgeInsets.all(50.0),
-                child: Text("Covid Info",
+                child: Text("COVID TRACKER",
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
                   ),

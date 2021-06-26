@@ -1,4 +1,5 @@
 
+import 'package:covid_tracker/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatefulWidget {
@@ -8,7 +9,21 @@ class Dashboard extends StatefulWidget {
 
 class _DashboardState extends State<Dashboard> {
   Map data = {};
-
+  int _selectedIndex = 0;
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+    if(index==0){
+      Navigator.pushNamed(context, "/home",arguments: data);
+    }
+    if(index==1){
+      Navigator.pushNamed(context,"/vaccineLogin");
+    }
+    if(index==2){
+      Navigator.pushNamed(context, "/hospitalPlace");
+    }
+  }
   @override
   Widget build(BuildContext context) {
     data=data.isNotEmpty?data:ModalRoute.of(context).settings.arguments;
@@ -23,48 +38,35 @@ class _DashboardState extends State<Dashboard> {
               fontStyle: FontStyle.italic),
         ),
       ),
-      body: ListView.builder(itemCount: 3,scrollDirection: Axis.horizontal,itemBuilder: (context,index){
-        String s="Default";
-        if(index==0){
-          s="Covid Details";
-        }
-        if(index==1){
-          s="Check Vaccination Details";
-        }
-        if(index==2){
-          s="CHECK ICU BEDS AND VENTILATORS";
-        }
-        return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 1.0,horizontal: 4.0),
-          child: InkWell(
-            onTap: (){
-              if(index==1){
-                Navigator.pushNamed(context,"/vaccineLogin");
-              }
-              if(index==0){
-                Navigator.pushNamed(context, "/home",arguments: data);
-              }
-              if(index==2){
-                Navigator.pushNamed(context, "/hospitalPlace");
-              }
-            },
-            child: SizedBox(
-              height: 300,
-              width: MediaQuery.of(context).size.width,
-              child: Card(
-                  elevation: 6,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                  child: Center(
-                      child: Text(
-                        "$s",
-                        style: TextStyle(fontSize: 32,),
-                      )
-                  )
-              ),
-            ),
+      body: Card(
+          elevation: 6,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          child: Center(
+              child: Text(
+                "Home",
+                style: TextStyle(fontSize: 32,),
+              )
+          )
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.coronavirus),
+            label: 'Cases',
           ),
-        );
-      }),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.local_hospital),
+            label: 'Vaccines',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.single_bed),
+            label: 'Hospital',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: darkTheme.accentColor,
+        onTap: _onItemTapped,
+      ),
     );
   }
 }
