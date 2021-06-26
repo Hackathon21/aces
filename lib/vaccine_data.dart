@@ -22,28 +22,34 @@ class VacData{
     print(dat);
     try {
       Response response = await get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=$pin&date=$dat");
-      Map data1 = jsonDecode(response.body);
-      //print(data1);
-      List data = data1["sessions"];
-      data.forEach((value) {
-        //print(value);
-        name.add((value["name"]).toString());
-        //print(value["name"]);
-        address.add((value["address"]).toString());
-        //print(value["address"]);
-        district.add((value["district_name"]).toString());
-        stat.add((value["state_name"]).toString());
-        feeType.add((value["fee_type"]).toString());
-        fee.add((value["fee"]).toString());
-        availability.add((value["available_capacity"]).toString());
-        minAgeLimit.add((value["min_age_limit"]).toString());
-        vaccine.add((value["vaccine"]).toString());
-        from.add((value["from"]).toString());
-        to.add((value["to"]).toString());
-        slots.add((value["slots"]).toString());
-        loc.add((value["lat"]).toDouble());
-        loc.add((value["long"]).toDouble());
-      });
+
+      if(response.statusCode == 200) {
+        Map data1 = jsonDecode(response.body);
+        //print(data1);
+        List data = data1["sessions"];
+        data.forEach((value) {
+          //print(value);
+          name.add((value["name"]).toString());
+          //print(value["name"]);
+          address.add((value["address"]).toString());
+          //print(value["address"]);
+          district.add((value["district_name"]).toString());
+          stat.add((value["state_name"]).toString());
+          feeType.add((value["fee_type"]).toString());
+          fee.add((value["fee"]).toString());
+          availability.add((value["available_capacity"]).toString());
+          minAgeLimit.add((value["min_age_limit"]).toString());
+          vaccine.add((value["vaccine"]).toString());
+          from.add((value["from"]).toString());
+          to.add((value["to"]).toString());
+          slots.add((value["slots"]).toString());
+          loc.add((value["lat"]).toDouble());
+          loc.add((value["long"]).toDouble());
+        });
+      }
+      else{
+        name.add("CHECK THE VALUES ENTERED AND TRY AGAIN");
+      }
     }
     catch(e){
       //print(e);

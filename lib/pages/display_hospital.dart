@@ -262,7 +262,7 @@ class _DisplayHospitalState extends State<DisplayHospital> {
                     Center(
                       child: FlatButton.icon(onPressed: () async {
                         //print(data["loc"][index]);
-                        await Navigator.pushNamed(context, "/mapDisplay");
+                        await Navigator.pushNamed(context, "/mapDisplay",arguments: {"loc": [22.98,87.85], "name":data["hospName"][index]});
                       }, icon: Icon(
                         Icons.edit_location,
                         color: Colors.blue[700],
