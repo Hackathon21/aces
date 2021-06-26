@@ -1,3 +1,4 @@
+import 'package:covid_tracker/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../vaccine_data.dart';
@@ -45,7 +46,7 @@ class _CheckVaccineState extends State<CheckVaccine> {
         return new Future.value(true);
       },
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: darkTheme.backgroundColor,
         body: Padding(
           padding: EdgeInsets.all(15.0),
           child: Column(

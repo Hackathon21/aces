@@ -80,6 +80,8 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                       child:ListTile(
+                        leading: Icon(Icons.coronavirus,
+                        color: Colors.red[800],),
                         title: Text(data["cases"],
                             style: TextStyle(
                               fontSize: 28.0,
@@ -100,6 +102,8 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                       child: ListTile(
+                        leading: Icon(Icons.whatshot,
+                          color: Colors.blue,),
                         title:Text(data["todayCases"],
                             style: TextStyle(
                               fontSize: 28.0,
@@ -121,6 +125,8 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                       child:ListTile(
+                        leading: Icon(Icons.airline_seat_individual_suite,
+                          color: Colors.red,),
                         title: Text(data["deaths"],
                             style: TextStyle(
                               fontSize: 28.0,
@@ -142,6 +148,8 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                       child:ListTile(
+                        leading: Icon(Icons.airline_seat_individual_suite,
+                          color: Colors.red,),
                         title: Text(data["todayDeaths"],
                             style: TextStyle(
                               fontSize: 28.0,
@@ -163,6 +171,8 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                      child: ListTile(
+                       leading: Icon(Icons.verified_user,
+                         color: Colors.green,),
                         title: Text(data["recovered"],
                             style: TextStyle(
                               fontSize: 28.0,
@@ -183,6 +193,8 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                       child:ListTile(
+                        leading: Icon(Icons.verified_user,
+                          color: Colors.green,),
                         title: Text(data["todayRecovered"],
                             style: TextStyle(
                               fontSize: 28.0,
@@ -203,6 +215,8 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                      child: ListTile(
+                       leading: Icon(Icons.whatshot,
+                         color: Colors.blue,),
                         title: Text(data["active"],
                             style: TextStyle(
                               fontSize: 28.0,
