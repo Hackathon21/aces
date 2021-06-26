@@ -46,7 +46,7 @@ class _CheckVaccineState extends State<CheckVaccine> {
         return new Future.value(true);
       },
       child: Scaffold(
-        backgroundColor: darkTheme.backgroundColor,
+        backgroundColor: Colors.white,
         body: Padding(
           padding: EdgeInsets.all(15.0),
           child: Column(
