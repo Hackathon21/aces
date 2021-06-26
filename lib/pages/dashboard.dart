@@ -45,7 +45,7 @@ class _DashboardState extends State<Dashboard> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
-          padding: EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(3.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,7 +57,7 @@ class _DashboardState extends State<Dashboard> {
                   children: [
                     Container(
                       height: 200,
-                      width: 100,
+                      width: 150,
                       child: Card(
                         semanticContainer: true,
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -72,8 +72,8 @@ class _DashboardState extends State<Dashboard> {
                       ),
                     ),
                     Container(
-                      height: 400,
-                      width: 100,
+                      height: 200,
+                      width: 150,
                       child: Card(
                           semanticContainer: true,
                           clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -90,6 +90,17 @@ class _DashboardState extends State<Dashboard> {
                   ],
                 ),
               ),
+              SizedBox(height: 30,),
+              Text("In these tough times as the third wave of covid is about to hit, It will be not easy to rush to the hospitals and for vaccines without knowing the availability of beds,vaccines etc...",style: TextStyle(
+                fontSize: 14.0,
+                letterSpacing: 2.0,
+                color: darkTheme.primaryColor,)),
+              SizedBox(height: 10,),
+              Text("Therefore we (Shubhankar Pandey and Shubham Saini) have created a covid tracker app to help those who are in need",style: TextStyle(
+                fontSize: 14.0,
+                letterSpacing: 2.0,
+                color: darkTheme.primaryColor,)),
+              SizedBox(height: 10,),
               Padding(
                 padding: const EdgeInsets.all(3.0),
                 child: Row(
@@ -99,14 +110,18 @@ class _DashboardState extends State<Dashboard> {
                       radius: 30,
                       child: ClipRRect(
                         child: Image.asset("assets/images/shubhankar.jpg"),
-                        borderRadius: BorderRadius.circular(50),
+                        borderRadius: BorderRadius.circular(80),
                       ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                      width: 30,
                     ),
                     CircleAvatar(
                       radius: 30,
                       child: ClipRRect(
-                        child: Image.asset("assets/images/shubhankar.jpg"),
-                        borderRadius: BorderRadius.circular(50),
+                        child: Image.asset("assets/images/saini.jpg"),
+                        borderRadius: BorderRadius.circular(80),
                       ),
                     ),
                   ],
